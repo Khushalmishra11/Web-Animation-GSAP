@@ -1,3 +1,4 @@
+
 function init() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -39,7 +40,6 @@ var tl = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
         scroller:".main",
-        markers:true,
         start:"top 27%",
         end:"top 0",
         scrub:3
@@ -59,3 +59,19 @@ tl.to(".page1 video",{
     width: "90%",
     duration:3,
 },"anim")
+
+var tl2 = gsap.timeline({
+  scrollTrigger:{
+      trigger:".page1 h1",
+      scroller:".main",
+      markers:true,
+      start:"top -90%",
+      end:"top -120%",
+      scrub:3
+  }
+})
+
+tl2.to('.main',{
+  backgroundColor: "white"
+
+})
