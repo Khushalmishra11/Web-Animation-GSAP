@@ -17,9 +17,8 @@ html, body{
     border-radius: 50%;
     position: fixed;
     background-color: #EDBFFF;
-    z-index: 9;
+    z-index: 8;
     mix-blend-mode: difference;
-    transition: all linear 0.05s;
 
 }
 
@@ -31,6 +30,8 @@ html, body{
 .page1{
     min-height: 100vh;
     width: 100%;
+    position: relative;
+    z-index: 9;
 }
 
 #nav{
@@ -102,6 +103,8 @@ html, body{
     width: 100%;
     padding: 0 5vw;
     border-bottom: 2px solid #6d6c6c;
+    position: relative;
+    z-index: 9;
 }
 
 .page2 h1{
@@ -152,9 +155,11 @@ html, body{
 
 
 .page3{
-    min-height: 150vh;
+    min-height: 120vh;
     width: 100%;
     color: #111;
+    position: relative;
+    z-index: 9;
 
 }
 .page3 h1{
@@ -162,6 +167,7 @@ html, body{
     font-size: 6.8vw;
     font-weight: 300;
     margin-left: 100px;
+
 
 
 
@@ -183,4 +189,72 @@ html, body{
 .page3-part1 video{
     height: 400px;
     width: 450px;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 100px;
+    margin-bottom: 10px;
+    
+}
+
+.elem{
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+
+.elem img:nth-child(1){
+    height: 300px;
+    width: 300px;
+    left: 2%;
+}
+
+
+.elem img:nth-child(3){
+    height: 300px;
+    width: 300px;
+    right: 6.7%;
+}
+
+.text-div{
+    height: 110px;
+    overflow: hidden;
+    color: black;
+ 
+}
+
+.text-div h1{
+    font-size: 7.3vw;
+    transition: all ease-out 0.5s;
+
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+}
+
+.page5{
+    position: relative;
+    z-index: 9;
+    min-height: 100vh;
+    width: 100%;
 }

@@ -72,7 +72,7 @@ var tl2 = gsap.timeline({
   scrollTrigger:{
       trigger:".page1 h1",
       scroller:".main",
-      markers:true,
+      // markers:true,
       start:"top -90%",
       end:"top -120%",
       scrub:3
@@ -83,3 +83,27 @@ tl2.to('.main',{
   backgroundColor: "white"
 
 })
+
+var tl3 = gsap.timeline({
+  scrollTrigger:{
+      trigger:".page1 h1",
+      scroller:".main",
+      // markers:true,
+      start:"top -250%",
+      end:"top -260%",
+      scrub:3
+  }
+})
+
+tl3.to('.main',{
+  duration:2,
+  backgroundColor: "#0F0D0D"
+
+},"anim2")
+
+tl3.to('.page3 img',{
+  opacity:0
+},"anim2")
+tl3.to('.page3 video',{
+  opacity:0
+},"anim2")
