@@ -19,6 +19,7 @@ html, body{
     background-color: #EDBFFF;
     z-index: 9;
     mix-blend-mode: difference;
+    transition: all linear 0.05s;
 
 }
 
