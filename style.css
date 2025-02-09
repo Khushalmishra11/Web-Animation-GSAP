@@ -11,6 +11,18 @@ html, body{
     widht: 100%;
 }
 
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 9;
+    mix-blend-mode: difference;
+
+}
+
+
 .main{
     background-color: #0F0D0D;
 }
@@ -151,6 +163,7 @@ html, body{
     margin-left: 100px;
 
 
+
 }
 
 .page3-part1{
@@ -161,8 +174,8 @@ html, body{
 
 
 .page3-part1 img{
-    height: 480px;
-    width: 500px;
+    height: 430px;
+    width: 460px;
     margin-top: 140px;
 }
 
