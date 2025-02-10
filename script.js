@@ -96,14 +96,15 @@ var tl3 = gsap.timeline({
 })
 
 tl3.to('.main',{
-  duration:2,
+  duration:5,
   backgroundColor: "#0F0D0D"
 
 },"anim2")
 
 tl3.to('.page3 img',{
-  opacity:0
+  opacity:0.5
 },"anim2")
 tl3.to('.page3 video',{
-  opacity:0
+  opacity:0.5
 },"anim2")
+
