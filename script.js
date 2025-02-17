@@ -101,3 +101,16 @@ tl3.to('.main',{
 
 },"anim2")
 
+var boxes = document.querySelectorAll(".box");
+boxes.forEach(function(elem){
+  elem.addEventListener("mouseenter",function(){
+    var att = elem.getAttribute("data-image");
+    crsr.style.width = "300px";
+    crsr.style.height = "250px";
+    crsr.style.borderRadius = "0";
+    crsr.style.backgroundImage = `url(${att})`
+  })
+  elem.addEventListener("mouseleave",function(){
+    elem.style.backgroundColor = "transparent";
+  })
+})
