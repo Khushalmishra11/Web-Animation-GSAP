@@ -101,10 +101,3 @@ tl3.to('.main',{
 
 },"anim2")
 
-tl3.to('.page3 img',{
-  opacity:0.5
-},"anim2")
-tl3.to('.page3 video',{
-  opacity:0.5
-},"anim2")
-
