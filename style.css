@@ -22,6 +22,15 @@ html, body{
 
 }
 
+#purple{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 100;
+    display: none;
+}
 
 .main{
     background-color: #0F0D0D;
@@ -32,6 +41,7 @@ html, body{
     width: 100%;
     position: relative;
     z-index: 9;
+    padding-top: 12vh;
 }
 
 #nav{
@@ -41,6 +51,9 @@ html, body{
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
 }
 
 #nav img{
@@ -76,7 +89,6 @@ html, body{
     font-size: 7vw;
     font-weight: 300;
     font-family: PP mori;
-    margin-top: 12vw;
     margin-left: 6vw;
 
 }
@@ -285,5 +297,7 @@ html, body{
 .footer{
     min-height: 50vh;
     width: 100%;
+    background-color: red;
+    margin-top: 20vh;
 
 }

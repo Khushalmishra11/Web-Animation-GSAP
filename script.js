@@ -39,9 +39,9 @@ init();
 
 var crsr = document.querySelector(".cursor")
 var main = document.querySelector(".main")
-main.addEventListener("mousemove",function(dets){
-  crsr.style.left = dets.x+"px"
-  crsr.style.top = dets.y+"px"
+document.addEventListener("mousemove",function(dets){
+  crsr.style.left = dets.x+ 20 +"px"
+  crsr.style.top = dets.y+ 20 +"px"
 })
 
 var tl = gsap.timeline({
@@ -112,5 +112,22 @@ boxes.forEach(function(elem){
   })
   elem.addEventListener("mouseleave",function(){
     elem.style.backgroundColor = "transparent";
+    crsr.style.width = "20px";
+    crsr.style.height = "20px";
+    crsr.style.borderRadius = "50%";
+    crsr.style.backgroundImage = `none`
+  })
+})
+
+var h4 = document.querySelectorAll("#nav h4")
+var purple = document.querySelector(".purple")
+h4.forEach(function(elem){
+  elem.addEventListener("mousemoves",function(){
+    purple.style.display = "block"
+    purple.style.opacit = "1"
+  })
+  elem.addEventListener("mouseleave",function(){
+    purple.style.display = "none"
+    purple.style.opacit = "0"
   })
 })
