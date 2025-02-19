@@ -2,6 +2,7 @@
 
 Welcome to the project! In this guide, we'll outline the steps to create an animated website using HTML, CSS, and JavaScript, along with the GSAP (GreenSock Animation Platform) library and its smooth scroll functionality.
 
+Check It Out on [WEBSITE](#https://khushalmishra11.github.io/Web-Animation-GSAP/)
 ## Table of Contents 📚
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
